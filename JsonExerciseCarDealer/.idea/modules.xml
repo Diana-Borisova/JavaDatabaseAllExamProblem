@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CarDealer_JsonEx_2/JsonExercise.iml" filepath="$PROJECT_DIR$/CarDealer_JsonEx_2/JsonExercise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Product_Shop_JsonEx_1/JsonExercise (1).iml" filepath="$PROJECT_DIR$/Product_Shop_JsonEx_1/JsonExercise (1).iml" />
+    </modules>
+  </component>
+</project>

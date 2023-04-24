@@ -1,0 +1,15 @@
+package softuni.exam.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+import softuni.exam.models.Rating;
+import softuni.exam.models.Seller;
+
+import java.util.Optional;
+
+@Repository
+public interface SellerRepository extends JpaRepository<Seller, Long> {
+
+    Optional<Seller> findByEmail(String email);
+Optional<Seller> findByEmailAndRating(String email, Rating rating);
+}

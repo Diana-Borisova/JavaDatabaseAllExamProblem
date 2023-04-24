@@ -1,0 +1,15 @@
+package softuni.exam.repository;
+
+import org.hibernate.secure.spi.JaccPermissionDeclarations;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+import softuni.exam.models.entity.City;
+import softuni.exam.models.entity.Country;
+
+import java.util.Optional;
+
+@Repository
+public interface CityRepository extends JpaRepository<City, Long> {
+    Optional<City> findCityByCityName(String cityName);
+
+}

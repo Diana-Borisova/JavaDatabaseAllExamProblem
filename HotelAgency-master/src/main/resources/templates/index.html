@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+    <title>DBTraveller</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="/css/carousel.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/reset.css"/>
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<header th:replace="/fragments/fragments::navbar"></header>
+
+<main class="align-content bg-blur">
+
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+                    aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <!--                rome-->
+                <img src="https://www.aerlingus.com/en-ie/media-em/ei/cities/rome-EI.jpg" alt=""
+                     class="bd-placeholder-img" width="100%"
+                     xmlns="http://www.w3.org/2000/svg"
+                     aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <!--                    <rect width="100%" height="100%" fill="#777"/>-->
+                <!--                </img>-->
+                <div class="container">
+                    <div class="carousel-caption text-start">
+                        <h1>Enormous amount of hotels</h1>
+                        <p>Find thousands of hotels on our web site!</p>
+                        <p><a class="btn btn-lg btn-primary" href="/users/register">Register Now</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <!--                istanbul-->
+                <img src="https://www.edreams.com/blog/wp-content/uploads/sites/3/2018/07/moscow-views-air.jpg" alt=""
+                     class="bd-placeholder-img" width="100%"
+                     xmlns="http://www.w3.org/2000/svg"
+                     aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <!--                    <rect width="100%" height="100%" fill="#777"/>-->
+                <!--                </img>-->
+
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Best Prices</h1>
+                        <p>Find the cheapest offers for hotels all over the world!</p>
+                        <p><a class="btn btn-lg btn-primary" href="/users/login">Login</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <!--                moscow-->
+                <img src="https://blog.ihg.com/wp-content/uploads/2017/11/family-travel-ideas-istanbul.png"
+                     alt="" class="bd-placeholder-img" max-width="100%"
+                     xmlns="http://www.w3.org/2000/svg"
+                     aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <!--                    <rect width="100%" height="100%" fill="#777"/>-->
+                <!--                </svg>-->
+
+                <div class="container">
+                    <div class="carousel-caption text-end">
+                        <h1>Easy reserving</h1>
+                        <p>There is no need pay deposit before reserving.</p>
+                        <p><a class="btn btn-lg btn-primary" href="/users/register">Reserve now!</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+        <!-- START THE FEATURETTES -->
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Discover! <span
+                        class="text-muted">Start planning your dream vacation!</span></h2>
+                <p class="lead">Register to explore thousands of hotels! From hostels to the most luxurious ones!</p>
+            </div>
+            <div class="col-md-5">
+                <img src="https://www.greavesindia.co.uk/wp-content/uploads/2016/11/Greaves_Insurance-500x500-c-default.jpg"
+                     width="500"
+                     height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+                     preserveAspectRatio="xMidYMid slice" focusable="false">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">Get the lowest price! <span
+                        class="text-muted">See for yourself.</span></h2>
+                <p class="lead">We can guarantee you the best prices on the Internet!</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img src="https://www.stmoritzhotel.co.uk/content/uploads/2018/03/ST.M.HOTEL0584-500x500.jpg"
+                     class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                     height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+                     preserveAspectRatio="xMidYMid slice" focusable="false">
+
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">List your own!<span class="text-muted"> It's free!</span></h2>
+                <p class="lead">List your own property and see your hotel being filled in minutes!</p>
+            </div>
+            <div class="col-md-5">
+                <img src="https://3.imimg.com/data3/AM/IU/MY-6686686/hotel-reception-counter-500x500.jpg"
+                     class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                     height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+                     preserveAspectRatio="xMidYMid slice" focusable="false">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- /END THE FEATURETTES -->
+
+    </div><!-- /.container -->
+
+
+    <!-- FOOTER -->
+
+</main>
+
+
+<script src="/js/bootstrap.bundle.min.js"></script>
+
+<footer class="footer bg-blur text-black-50" th:replace="/fragments/fragments::footer"></footer>
+
+</body>
+</html>
